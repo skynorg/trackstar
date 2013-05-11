@@ -1,0 +1,13 @@
+#!/bin/bash -e
+DBHOST=localhost
+DBUSER=root
+DBPASS=Cvx1788
+DBNAME=testdrive
+PREFIX=tbl_
+DUMPFILE=${PREFIX}dump.sql
+GITREPO="D:\WebServers\home\easylend.no-ip.org\www\"
+
+"C:/Program Files \(x86\)/MySQL/MySQL Workbench CE 5.2.47/mysql.exe" $DBNAME --host=$DBHOST --port=3306 --user=$DBUSER --password=$DBPASS -e "show tables like '$PREFIX%'" | grep -v Tables_in | xargs
+"C:/Program Files \(x86\)/MySQL/MySQL Workbench CE 5.2.47/mysqldump.exe" --host=$DBHOST --port=3306 --user=$DBUSER --password=$DBPASS --events --routines --triggers --skip-extended-insert --skip-add-locks --dump-date $DBNAME > $GITREPO/$DUMPFILE
+cd $GITREPO
+git add $DUMPFILE

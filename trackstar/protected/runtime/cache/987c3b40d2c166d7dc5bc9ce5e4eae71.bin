@@ -1,0 +1,1132 @@
+a:2:{i:0;a:2:{i:0;s:46981:"<div class="portlet" id="yw2">
+<div class="portlet-decoration">
+<div class="portlet-title">Recent Comments</div>
+</div>
+<div class="portlet-content">
+<ul>
+            <div class="author">
+            test added a comment        </div>
+        <div class="issue">
+            <a href="/trackstar/issue/view/id/2">qwerty</a>        </div>
+            <div class="author">
+            test added a comment        </div>
+        <div class="issue">
+            <a href="/trackstar/issue/view/id/2">qwerty</a>        </div>
+            <div class="author">
+            test added a comment        </div>
+        <div class="issue">
+            <a href="/trackstar/issue/view/id/2">qwerty</a>        </div>
+            <div class="author">
+            test added a comment        </div>
+        <div class="issue">
+            <a href="/trackstar/issue/view/id/2">qwerty</a>        </div>
+    </ul>
+
+Comment#1
+(
+    [CActiveRecord:_md] => CActiveRecordMetaData#2
+    (
+        [tableSchema] => CMysqlTableSchema#3
+        (
+            [schemaName] => null
+            [name] => 'tbl_comment'
+            [rawName] => '`tbl_comment`'
+            [primaryKey] => 'id'
+            [sequenceName] => ''
+            [foreignKeys] => array
+            (
+                'issue_id' => array
+                (
+                    0 => 'tbl_issue'
+                    1 => 'id'
+                )
+                'create_user_id' => array
+                (
+                    0 => 'tbl_user'
+                    1 => 'id'
+                )
+                'update_user_id' => array
+                (
+                    0 => 'tbl_user'
+                    1 => 'id'
+                )
+            )
+            [columns] => array
+            (
+                'id' => CMysqlColumnSchema#4
+                (
+                    [name] => 'id'
+                    [rawName] => '`id`'
+                    [allowNull] => false
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => true
+                    [isForeignKey] => false
+                    [autoIncrement] => true
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'content' => CMysqlColumnSchema#5
+                (
+                    [name] => 'content'
+                    [rawName] => '`content`'
+                    [allowNull] => false
+                    [dbType] => 'text'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'issue_id' => CMysqlColumnSchema#6
+                (
+                    [name] => 'issue_id'
+                    [rawName] => '`issue_id`'
+                    [allowNull] => false
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => true
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'create_time' => CMysqlColumnSchema#7
+                (
+                    [name] => 'create_time'
+                    [rawName] => '`create_time`'
+                    [allowNull] => false
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'create_user_id' => CMysqlColumnSchema#8
+                (
+                    [name] => 'create_user_id'
+                    [rawName] => '`create_user_id`'
+                    [allowNull] => true
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => true
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'update_time' => CMysqlColumnSchema#9
+                (
+                    [name] => 'update_time'
+                    [rawName] => '`update_time`'
+                    [allowNull] => true
+                    [dbType] => 'datetime'
+                    [type] => 'string'
+                    [defaultValue] => null
+                    [size] => null
+                    [precision] => null
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => false
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                'update_user_id' => CMysqlColumnSchema#10
+                (
+                    [name] => 'update_user_id'
+                    [rawName] => '`update_user_id`'
+                    [allowNull] => true
+                    [dbType] => 'int(11)'
+                    [type] => 'integer'
+                    [defaultValue] => null
+                    [size] => 11
+                    [precision] => 11
+                    [scale] => null
+                    [isPrimaryKey] => false
+                    [isForeignKey] => true
+                    [autoIncrement] => false
+                    [comment] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [columns] => array
+        (
+            'id' => CMysqlColumnSchema#4(...)
+            'content' => CMysqlColumnSchema#5(...)
+            'issue_id' => CMysqlColumnSchema#6(...)
+            'create_time' => CMysqlColumnSchema#7(...)
+            'create_user_id' => CMysqlColumnSchema#8(...)
+            'update_time' => CMysqlColumnSchema#9(...)
+            'update_user_id' => CMysqlColumnSchema#10(...)
+        )
+        [relations] => array
+        (
+            'updateUser' => CBelongsToRelation#11
+            (
+                [joinType] => 'LEFT OUTER JOIN'
+                [on] => ''
+                [alias] => null
+                [with] => array()
+                [together] => null
+                [scopes] => null
+                [name] => 'updateUser'
+                [className] => 'User'
+                [foreignKey] => 'update_user_id'
+                [select] => '*'
+                [condition] => ''
+                [params] => array()
+                [group] => ''
+                [join] => ''
+                [having] => ''
+                [order] => ''
+                [CComponent:_e] => null
+                [CComponent:_m] => null
+            )
+            'issue' => CBelongsToRelation#12
+            (
+                [joinType] => 'LEFT OUTER JOIN'
+                [on] => ''
+                [alias] => null
+                [with] => array()
+                [together] => null
+                [scopes] => null
+                [name] => 'issue'
+                [className] => 'Issue'
+                [foreignKey] => 'issue_id'
+                [select] => '*'
+                [condition] => ''
+                [params] => array()
+                [group] => ''
+                [join] => ''
+                [having] => ''
+                [order] => ''
+                [CComponent:_e] => null
+                [CComponent:_m] => null
+            )
+            'author' => CBelongsToRelation#13
+            (
+                [joinType] => 'LEFT OUTER JOIN'
+                [on] => ''
+                [alias] => null
+                [with] => array()
+                [together] => null
+                [scopes] => null
+                [name] => 'author'
+                [className] => 'User'
+                [foreignKey] => 'create_user_id'
+                [select] => '*'
+                [condition] => ''
+                [params] => array()
+                [group] => ''
+                [join] => ''
+                [having] => ''
+                [order] => ''
+                [CComponent:_e] => null
+                [CComponent:_m] => null
+            )
+        )
+        [attributeDefaults] => array()
+        [CActiveRecordMetaData:_model] => Comment#14
+        (
+            [CActiveRecord:_md] => CActiveRecordMetaData#2(...)
+            [CActiveRecord:_new] => false
+            [CActiveRecord:_attributes] => array()
+            [CActiveRecord:_related] => array()
+            [CActiveRecord:_c] => null
+            [CActiveRecord:_pk] => null
+            [CActiveRecord:_alias] => 't'
+            [CModel:_errors] => array()
+            [CModel:_validators] => null
+            [CModel:_scenario] => ''
+            [CComponent:_e] => array
+            (
+                'onbeforesave' => CList#15
+                (
+                    [CList:_d] => array
+                    (
+                        0 => array
+                        (
+                            0 => CTimestampBehavior#16
+                            (
+                                [createAttribute] => 'create_time'
+                                [updateAttribute] => 'update_time'
+                                [setUpdateOnCreate] => true
+                                [timestampExpression] => null
+                                [CBehavior:_enabled] => true
+                                [CBehavior:_owner] => Comment#14(...)
+                                [CComponent:_e] => null
+                                [CComponent:_m] => null
+                            )
+                            1 => 'beforeSave'
+                        )
+                    )
+                    [CList:_c] => 1
+                    [CList:_r] => false
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CComponent:_m] => array
+            (
+                'CTimestampBehavior' => CTimestampBehavior#16(...)
+            )
+        )
+    )
+    [CActiveRecord:_new] => false
+    [CActiveRecord:_attributes] => array
+    (
+        'id' => '1'
+        'content' => 'sdfgsd'
+        'issue_id' => '2'
+        'create_time' => '2013-04-24 21:10:38'
+        'create_user_id' => '8'
+        'update_time' => '2013-04-24 21:10:38'
+        'update_user_id' => '8'
+    )
+    [CActiveRecord:_related] => array
+    (
+        'author' => User#17
+        (
+            [password_repeat] => null
+            [CActiveRecord:_md] => CActiveRecordMetaData#18
+            (
+                [tableSchema] => CMysqlTableSchema#19
+                (
+                    [schemaName] => null
+                    [name] => 'tbl_user'
+                    [rawName] => '`tbl_user`'
+                    [primaryKey] => 'id'
+                    [sequenceName] => ''
+                    [foreignKeys] => array()
+                    [columns] => array
+                    (
+                        'id' => CMysqlColumnSchema#20
+                        (
+                            [name] => 'id'
+                            [rawName] => '`id`'
+                            [allowNull] => false
+                            [dbType] => 'int(11)'
+                            [type] => 'integer'
+                            [defaultValue] => null
+                            [size] => 11
+                            [precision] => 11
+                            [scale] => null
+                            [isPrimaryKey] => true
+                            [isForeignKey] => false
+                            [autoIncrement] => true
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'username' => CMysqlColumnSchema#21
+                        (
+                            [name] => 'username'
+                            [rawName] => '`username`'
+                            [allowNull] => false
+                            [dbType] => 'varchar(255)'
+                            [type] => 'string'
+                            [defaultValue] => null
+                            [size] => 255
+                            [precision] => 255
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'email' => CMysqlColumnSchema#22
+                        (
+                            [name] => 'email'
+                            [rawName] => '`email`'
+                            [allowNull] => false
+                            [dbType] => 'varchar(255)'
+                            [type] => 'string'
+                            [defaultValue] => null
+                            [size] => 255
+                            [precision] => 255
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'password' => CMysqlColumnSchema#23
+                        (
+                            [name] => 'password'
+                            [rawName] => '`password`'
+                            [allowNull] => false
+                            [dbType] => 'varchar(255)'
+                            [type] => 'string'
+                            [defaultValue] => null
+                            [size] => 255
+                            [precision] => 255
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'last_login_time' => CMysqlColumnSchema#24
+                        (
+                            [name] => 'last_login_time'
+                            [rawName] => '`last_login_time`'
+                            [allowNull] => true
+                            [dbType] => 'datetime'
+                            [type] => 'string'
+                            [defaultValue] => null
+                            [size] => null
+                            [precision] => null
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'create_time' => CMysqlColumnSchema#25
+                        (
+                            [name] => 'create_time'
+                            [rawName] => '`create_time`'
+                            [allowNull] => true
+                            [dbType] => 'datetime'
+                            [type] => 'string'
+                            [defaultValue] => null
+                            [size] => null
+                            [precision] => null
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'create_user_id' => CMysqlColumnSchema#26
+                        (
+                            [name] => 'create_user_id'
+                            [rawName] => '`create_user_id`'
+                            [allowNull] => true
+                            [dbType] => 'int(11)'
+                            [type] => 'integer'
+                            [defaultValue] => null
+                            [size] => 11
+                            [precision] => 11
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'update_time' => CMysqlColumnSchema#27
+                        (
+                            [name] => 'update_time'
+                            [rawName] => '`update_time`'
+                            [allowNull] => true
+                            [dbType] => 'datetime'
+                            [type] => 'string'
+                            [defaultValue] => null
+                            [size] => null
+                            [precision] => null
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'update_user_id' => CMysqlColumnSchema#28
+                        (
+                            [name] => 'update_user_id'
+                            [rawName] => '`update_user_id`'
+                            [allowNull] => true
+                            [dbType] => 'int(11)'
+                            [type] => 'integer'
+                            [defaultValue] => null
+                            [size] => 11
+                            [precision] => 11
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                    )
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                [columns] => array
+                (
+                    'id' => CMysqlColumnSchema#20(...)
+                    'username' => CMysqlColumnSchema#21(...)
+                    'email' => CMysqlColumnSchema#22(...)
+                    'password' => CMysqlColumnSchema#23(...)
+                    'last_login_time' => CMysqlColumnSchema#24(...)
+                    'create_time' => CMysqlColumnSchema#25(...)
+                    'create_user_id' => CMysqlColumnSchema#26(...)
+                    'update_time' => CMysqlColumnSchema#27(...)
+                    'update_user_id' => CMysqlColumnSchema#28(...)
+                )
+                [relations] => array
+                (
+                    'issues' => CHasManyRelation#29
+                    (
+                        [limit] => -1
+                        [offset] => -1
+                        [index] => null
+                        [through] => null
+                        [joinType] => 'LEFT OUTER JOIN'
+                        [on] => ''
+                        [alias] => null
+                        [with] => array()
+                        [together] => null
+                        [scopes] => null
+                        [name] => 'issues'
+                        [className] => 'Issue'
+                        [foreignKey] => 'requester_id'
+                        [select] => '*'
+                        [condition] => ''
+                        [params] => array()
+                        [group] => ''
+                        [join] => ''
+                        [having] => ''
+                        [order] => ''
+                        [CComponent:_e] => null
+                        [CComponent:_m] => null
+                    )
+                    'issues1' => CHasManyRelation#30
+                    (
+                        [limit] => -1
+                        [offset] => -1
+                        [index] => null
+                        [through] => null
+                        [joinType] => 'LEFT OUTER JOIN'
+                        [on] => ''
+                        [alias] => null
+                        [with] => array()
+                        [together] => null
+                        [scopes] => null
+                        [name] => 'issues1'
+                        [className] => 'Issue'
+                        [foreignKey] => 'owner_id'
+                        [select] => '*'
+                        [condition] => ''
+                        [params] => array()
+                        [group] => ''
+                        [join] => ''
+                        [having] => ''
+                        [order] => ''
+                        [CComponent:_e] => null
+                        [CComponent:_m] => null
+                    )
+                    'tblProjects' => CManyManyRelation#31
+                    (
+                        [CManyManyRelation:_junctionTableName] => null
+                        [CManyManyRelation:_junctionForeignKeys] => null
+                        [limit] => -1
+                        [offset] => -1
+                        [index] => null
+                        [through] => null
+                        [joinType] => 'LEFT OUTER JOIN'
+                        [on] => ''
+                        [alias] => null
+                        [with] => array()
+                        [together] => null
+                        [scopes] => null
+                        [name] => 'tblProjects'
+                        [className] => 'Project'
+                        [foreignKey] => 'tbl_project_user_assignment(user_id, project_id)'
+                        [select] => '*'
+                        [condition] => ''
+                        [params] => array()
+                        [group] => ''
+                        [join] => ''
+                        [having] => ''
+                        [order] => ''
+                        [CComponent:_e] => null
+                        [CComponent:_m] => null
+                    )
+                )
+                [attributeDefaults] => array()
+                [CActiveRecordMetaData:_model] => User#32
+                (
+                    [password_repeat] => null
+                    [CActiveRecord:_md] => CActiveRecordMetaData#18(...)
+                    [CActiveRecord:_new] => false
+                    [CActiveRecord:_attributes] => array()
+                    [CActiveRecord:_related] => array()
+                    [CActiveRecord:_c] => null
+                    [CActiveRecord:_pk] => null
+                    [CActiveRecord:_alias] => 't'
+                    [CModel:_errors] => array()
+                    [CModel:_validators] => null
+                    [CModel:_scenario] => ''
+                    [CComponent:_e] => array
+                    (
+                        'onbeforesave' => CList#33
+                        (
+                            [CList:_d] => array
+                            (
+                                0 => array
+                                (
+                                    0 => CTimestampBehavior#34
+                                    (
+                                        [createAttribute] => 'create_time'
+                                        [updateAttribute] => 'update_time'
+                                        [setUpdateOnCreate] => true
+                                        [timestampExpression] => null
+                                        [CBehavior:_enabled] => true
+                                        [CBehavior:_owner] => User#32(...)
+                                        [CComponent:_e] => null
+                                        [CComponent:_m] => null
+                                    )
+                                    1 => 'beforeSave'
+                                )
+                            )
+                            [CList:_c] => 1
+                            [CList:_r] => false
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                    )
+                    [CComponent:_m] => array
+                    (
+                        'CTimestampBehavior' => CTimestampBehavior#34(...)
+                    )
+                )
+            )
+            [CActiveRecord:_new] => false
+            [CActiveRecord:_attributes] => array
+            (
+                'id' => '8'
+                'username' => 'test'
+                'email' => 'test@test.ru'
+                'password' => '098f6bcd4621d373cade4e832627b4f6'
+                'last_login_time' => '2013-05-04 14:28:28'
+                'create_time' => '2013-04-14 18:26:11'
+                'create_user_id' => '0'
+                'update_time' => '2013-04-14 18:26:11'
+                'update_user_id' => '0'
+            )
+            [CActiveRecord:_related] => array()
+            [CActiveRecord:_c] => null
+            [CActiveRecord:_pk] => '8'
+            [CActiveRecord:_alias] => 't'
+            [CModel:_errors] => array()
+            [CModel:_validators] => null
+            [CModel:_scenario] => 'update'
+            [CComponent:_e] => array
+            (
+                'onbeforesave' => CList#35
+                (
+                    [CList:_d] => array
+                    (
+                        0 => array
+                        (
+                            0 => CTimestampBehavior#36
+                            (
+                                [createAttribute] => 'create_time'
+                                [updateAttribute] => 'update_time'
+                                [setUpdateOnCreate] => true
+                                [timestampExpression] => null
+                                [CBehavior:_enabled] => true
+                                [CBehavior:_owner] => User#17(...)
+                                [CComponent:_e] => null
+                                [CComponent:_m] => null
+                            )
+                            1 => 'beforeSave'
+                        )
+                    )
+                    [CList:_c] => 1
+                    [CList:_r] => false
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CComponent:_m] => array
+            (
+                'CTimestampBehavior' => CTimestampBehavior#36(...)
+            )
+        )
+        'issue' => Issue#37
+        (
+            [CActiveRecord:_md] => CActiveRecordMetaData#38
+            (
+                [tableSchema] => CMysqlTableSchema#39
+                (
+                    [schemaName] => null
+                    [name] => 'tbl_issue'
+                    [rawName] => '`tbl_issue`'
+                    [primaryKey] => 'id'
+                    [sequenceName] => ''
+                    [foreignKeys] => array
+                    (
+                        'owner_id' => array
+                        (
+                            0 => 'tbl_user'
+                            1 => 'id'
+                        )
+                        'project_id' => array
+                        (
+                            0 => 'tbl_project'
+                            1 => 'id'
+                        )
+                        'requester_id' => array
+                        (
+                            0 => 'tbl_user'
+                            1 => 'id'
+                        )
+                    )
+                    [columns] => array
+                    (
+                        'id' => CMysqlColumnSchema#40
+                        (
+                            [name] => 'id'
+                            [rawName] => '`id`'
+                            [allowNull] => false
+                            [dbType] => 'int(11)'
+                            [type] => 'integer'
+                            [defaultValue] => null
+                            [size] => 11
+                            [precision] => 11
+                            [scale] => null
+                            [isPrimaryKey] => true
+                            [isForeignKey] => false
+                            [autoIncrement] => true
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'name' => CMysqlColumnSchema#41
+                        (
+                            [name] => 'name'
+                            [rawName] => '`name`'
+                            [allowNull] => false
+                            [dbType] => 'varchar(255)'
+                            [type] => 'string'
+                            [defaultValue] => null
+                            [size] => 255
+                            [precision] => 255
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'project_id' => CMysqlColumnSchema#42
+                        (
+                            [name] => 'project_id'
+                            [rawName] => '`project_id`'
+                            [allowNull] => true
+                            [dbType] => 'int(11)'
+                            [type] => 'integer'
+                            [defaultValue] => null
+                            [size] => 11
+                            [precision] => 11
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => true
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'type_id' => CMysqlColumnSchema#43
+                        (
+                            [name] => 'type_id'
+                            [rawName] => '`type_id`'
+                            [allowNull] => true
+                            [dbType] => 'int(11)'
+                            [type] => 'integer'
+                            [defaultValue] => null
+                            [size] => 11
+                            [precision] => 11
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'status_id' => CMysqlColumnSchema#44
+                        (
+                            [name] => 'status_id'
+                            [rawName] => '`status_id`'
+                            [allowNull] => true
+                            [dbType] => 'int(11)'
+                            [type] => 'integer'
+                            [defaultValue] => null
+                            [size] => 11
+                            [precision] => 11
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'owner_id' => CMysqlColumnSchema#45
+                        (
+                            [name] => 'owner_id'
+                            [rawName] => '`owner_id`'
+                            [allowNull] => true
+                            [dbType] => 'int(11)'
+                            [type] => 'integer'
+                            [defaultValue] => null
+                            [size] => 11
+                            [precision] => 11
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => true
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'requester_id' => CMysqlColumnSchema#46
+                        (
+                            [name] => 'requester_id'
+                            [rawName] => '`requester_id`'
+                            [allowNull] => true
+                            [dbType] => 'int(11)'
+                            [type] => 'integer'
+                            [defaultValue] => null
+                            [size] => 11
+                            [precision] => 11
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => true
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'create_time' => CMysqlColumnSchema#47
+                        (
+                            [name] => 'create_time'
+                            [rawName] => '`create_time`'
+                            [allowNull] => true
+                            [dbType] => 'datetime'
+                            [type] => 'string'
+                            [defaultValue] => null
+                            [size] => null
+                            [precision] => null
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'create_user_id' => CMysqlColumnSchema#48
+                        (
+                            [name] => 'create_user_id'
+                            [rawName] => '`create_user_id`'
+                            [allowNull] => true
+                            [dbType] => 'int(11)'
+                            [type] => 'integer'
+                            [defaultValue] => null
+                            [size] => 11
+                            [precision] => 11
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'update_time' => CMysqlColumnSchema#49
+                        (
+                            [name] => 'update_time'
+                            [rawName] => '`update_time`'
+                            [allowNull] => true
+                            [dbType] => 'datetime'
+                            [type] => 'string'
+                            [defaultValue] => null
+                            [size] => null
+                            [precision] => null
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                        'update_user_id' => CMysqlColumnSchema#50
+                        (
+                            [name] => 'update_user_id'
+                            [rawName] => '`update_user_id`'
+                            [allowNull] => true
+                            [dbType] => 'int(11)'
+                            [type] => 'integer'
+                            [defaultValue] => null
+                            [size] => 11
+                            [precision] => 11
+                            [scale] => null
+                            [isPrimaryKey] => false
+                            [isForeignKey] => false
+                            [autoIncrement] => false
+                            [comment] => ''
+                            [CComponent:_e] => null
+                            [CComponent:_m] => null
+                        )
+                    )
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+                [columns] => array
+                (
+                    'id' => CMysqlColumnSchema#40(...)
+                    'name' => CMysqlColumnSchema#41(...)
+                    'project_id' => CMysqlColumnSchema#42(...)
+                    'type_id' => CMysqlColumnSchema#43(...)
+                    'status_id' => CMysqlColumnSchema#44(...)
+                    'owner_id' => CMysqlColumnSchema#45(...)
+                    'requester_id' => CMysqlColumnSchema#46(...)
+                    'create_time' => CMysqlColumnSchema#47(...)
+                    'create_user_id' => CMysqlColumnSchema#48(...)
+                    'update_time' => CMysqlColumnSchema#49(...)
+                    'update_user_id' => CMysqlColumnSchema#50(...)
+                )
+                [relations] => array
+                (
+                    'requester' => CBelongsToRelation#51
+                    (
+                        [joinType] => 'LEFT OUTER JOIN'
+                        [on] => ''
+                        [alias] => null
+                        [with] => array()
+                        [together] => null
+                        [scopes] => null
+                        [name] => 'requester'
+                        [className] => 'User'
+                        [foreignKey] => 'requester_id'
+                        [select] => '*'
+                        [condition] => ''
+                        [params] => array()
+                        [group] => ''
+                        [join] => ''
+                        [having] => ''
+                        [order] => ''
+                        [CComponent:_e] => null
+                        [CComponent:_m] => null
+                    )
+                    'owner' => CBelongsToRelation#52
+                    (
+                        [joinType] => 'LEFT OUTER JOIN'
+                        [on] => ''
+                        [alias] => null
+                        [with] => array()
+                        [together] => null
+                        [scopes] => null
+                        [name] => 'owner'
+                        [className] => 'User'
+                        [foreignKey] => 'owner_id'
+                        [select] => '*'
+                        [condition] => ''
+                        [params] => array()
+                        [group] => ''
+                        [join] => ''
+                        [having] => ''
+                        [order] => ''
+                        [CComponent:_e] => null
+                        [CComponent:_m] => null
+                    )
+                    'project' => CBelongsToRelation#53
+                    (
+                        [joinType] => 'LEFT OUTER JOIN'
+                        [on] => ''
+                        [alias] => null
+                        [with] => array()
+                        [together] => null
+                        [scopes] => null
+                        [name] => 'project'
+                        [className] => 'Project'
+                        [foreignKey] => 'project_id'
+                        [select] => '*'
+                        [condition] => ''
+                        [params] => array()
+                        [group] => ''
+                        [join] => ''
+                        [having] => ''
+                        [order] => ''
+                        [CComponent:_e] => null
+                        [CComponent:_m] => null
+                    )
+                    'comments' => CHasManyRelation#54
+                    (
+                        [limit] => -1
+                        [offset] => -1
+                        [index] => null
+                        [through] => null
+                        [joinType] => 'LEFT OUTER JOIN'
+                        [on] => ''
+                        [alias] => null
+                        [with] => array()
+                        [together] => null
+                        [scopes] => null
+                        [name] => 'comments'
+                        [className] => 'Comment'
+                        [foreignKey] => 'issue_id'
+                        [select] => '*'
+                        [condition] => ''
+                        [params] => array()
+                        [group] => ''
+                        [join] => ''
+                        [having] => ''
+                        [order] => ''
+                        [CComponent:_e] => null
+                        [CComponent:_m] => null
+                    )
+                    'commentCount' => CStatRelation#55
+                    (
+                        [select] => 'COUNT(*)'
+                        [defaultValue] => 0
+                        [name] => 'commentCount'
+                        [className] => 'Comment'
+                        [foreignKey] => 'issue_id'
+                        [condition] => ''
+                        [params] => array()
+                        [group] => ''
+                        [join] => ''
+                        [having] => ''
+                        [order] => ''
+                        [CComponent:_e] => null
+                        [CComponent:_m] => null
+                    )
+                )
+                [attributeDefaults] => array()
+                [CActiveRecordMetaData:_model] => Issue#56
+                (
+                    [CActiveRecord:_md] => CActiveRecordMetaData#38(...)
+                    [CActiveRecord:_new] => false
+                    [CActiveRecord:_attributes] => array()
+                    [CActiveRecord:_related] => array()
+                    [CActiveRecord:_c] => null
+                    [CActiveRecord:_pk] => null
+                    [CActiveRecord:_alias] => 't'
+                    [CModel:_errors] => array()
+                    [CModel:_validators] => null
+                    [CModel:_scenario] => ''
+                    [CComponent:_e] => null
+                    [CComponent:_m] => null
+                )
+            )
+            [CActiveRecord:_new] => false
+            [CActiveRecord:_attributes] => array
+            (
+                'id' => '2'
+                'name' => 'qwerty'
+                'project_id' => '1'
+                'type_id' => '0'
+                'status_id' => '0'
+                'owner_id' => '1'
+                'requester_id' => '1'
+                'create_time' => null
+                'create_user_id' => null
+                'update_time' => null
+                'update_user_id' => null
+            )
+            [CActiveRecord:_related] => array()
+            [CActiveRecord:_c] => null
+            [CActiveRecord:_pk] => '2'
+            [CActiveRecord:_alias] => 't'
+            [CModel:_errors] => array()
+            [CModel:_validators] => null
+            [CModel:_scenario] => 'update'
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+    )
+    [CActiveRecord:_c] => null
+    [CActiveRecord:_pk] => '1'
+    [CActiveRecord:_alias] => 't'
+    [CModel:_errors] => array()
+    [CModel:_validators] => null
+    [CModel:_scenario] => 'update'
+    [CComponent:_e] => array
+    (
+        'onbeforesave' => CList#57
+        (
+            [CList:_d] => array
+            (
+                0 => array
+                (
+                    0 => CTimestampBehavior#58
+                    (
+                        [createAttribute] => 'create_time'
+                        [updateAttribute] => 'update_time'
+                        [setUpdateOnCreate] => true
+                        [timestampExpression] => null
+                        [CBehavior:_enabled] => true
+                        [CBehavior:_owner] => Comment#1(...)
+                        [CComponent:_e] => null
+                        [CComponent:_m] => null
+                    )
+                    1 => 'beforeSave'
+                )
+            )
+            [CList:_c] => 1
+            [CList:_r] => false
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+    )
+    [CComponent:_m] => array
+    (
+        'CTimestampBehavior' => CTimestampBehavior#58(...)
+    )
+)</div>
+</div>1367759729";i:1;N;}i:1;O:18:"CDbCacheDependency":9:{s:12:"connectionID";s:2:"db";s:3:"sql";s:42:"SELECT MAX(update_time) FROM `tbl_comment`";s:6:"params";N;s:23:" CDbCacheDependency _db";N;s:18:"reuseDependentData";b:0;s:23:" CCacheDependency _hash";N;s:23:" CCacheDependency _data";a:1:{s:16:"MAX(update_time)";s:19:"2013-05-05 16:08:46";}s:14:" CComponent _e";N;s:14:" CComponent _m";N;}}

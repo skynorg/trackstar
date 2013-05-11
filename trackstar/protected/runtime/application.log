@@ -1,0 +1,1495 @@
+2013/04/18 16:21:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php (59)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php (32)
+2013/04/18 16:21:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php(1247): CDbCommand->execute(Array)
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(263): CDbCommand->insert('tbl_auth_assign...', Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php(59): CDbAuthManager->assign('owner', '1', 'return isset($p...')
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(49): ProjectController->actionCreate()
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/create')
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#16 {main}
+REQUEST_URI=/trackstar/index.php?r=project/create
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/create
+---
+2013/04/22 08:03:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\ProjectUserForm.php (68)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php (138)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php (32)
+2013/04/22 08:03:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php(1247): CDbCommand->execute(Array)
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(263): CDbCommand->insert('tbl_auth_assign...', Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\ProjectUserForm.php(68): CDbAuthManager->assign('owner', '1', 'return isset($p...')
+#3 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php(138): ProjectUserForm->assign()
+#4 [internal function]: ProjectController->actionAdduser('2')
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#16 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#17 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#19 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=2
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/adduser&id=2
+---
+2013/04/23 08:11:32 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\ProjectUserForm.php (68)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php (138)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php (32)
+2013/04/23 08:11:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php(1247): CDbCommand->execute(Array)
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(263): CDbCommand->insert('tbl_auth_assign...', Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\ProjectUserForm.php(68): CDbAuthManager->assign('owner', '1', 'return isset($p...')
+#3 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php(138): ProjectUserForm->assign()
+#4 [internal function]: ProjectController->actionAdduser('9')
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#16 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#17 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#19 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=9
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/adduser&id=9
+---
+2013/04/23 08:19:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\ProjectUserForm.php (68)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php (138)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php (32)
+2013/04/23 08:19:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php(1247): CDbCommand->execute(Array)
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(263): CDbCommand->insert('tbl_auth_assign...', Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\ProjectUserForm.php(68): CDbAuthManager->assign('owner', '1', 'return isset($p...')
+#3 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php(138): ProjectUserForm->assign()
+#4 [internal function]: ProjectController->actionAdduser('9')
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#16 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#17 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#19 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=9
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/adduser&id=9
+---
+2013/04/23 08:20:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\ProjectUserForm.php (68)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php (138)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php (32)
+2013/04/23 08:20:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php:359
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php(1249): CDbCommand->execute(Array)
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(263): CDbCommand->insert('tbl_auth_assign...', Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\ProjectUserForm.php(68): CDbAuthManager->assign('owner', '1', 'return isset($p...')
+#3 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php(138): ProjectUserForm->assign()
+#4 [internal function]: ProjectController->actionAdduser('9')
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#16 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#17 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#19 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=9
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/adduser&id=9
+---
+2013/04/23 08:32:13 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\ProjectUserForm.php (68)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php (138)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php (32)
+2013/04/23 08:32:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php:359
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php(1249): CDbCommand->execute(Array)
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(263): CDbCommand->insert('tbl_auth_assign...', Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\ProjectUserForm.php(68): CDbAuthManager->assign('owner', '1', 'return isset($p...')
+#3 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php(138): ProjectUserForm->assign()
+#4 [internal function]: ProjectController->actionAdduser('9')
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#16 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#17 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#19 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=9
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/adduser&id=9
+---
+2013/04/23 08:37:18 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\ProjectUserForm.php (69)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php (138)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php (32)
+2013/04/23 08:37:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php:359
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php(1249): CDbCommand->execute(Array)
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(263): CDbCommand->insert('tbl_auth_assign...', Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\ProjectUserForm.php(69): CDbAuthManager->assign('owner', '1', 'somerule')
+#3 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php(138): ProjectUserForm->assign()
+#4 [internal function]: ProjectController->actionAdduser('9')
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#16 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#17 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#19 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=9
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/adduser&id=9
+---
+2013/04/23 08:37:42 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\ProjectUserForm.php (69)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php (138)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php (32)
+2013/04/23 08:37:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php:359
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php(1249): CDbCommand->execute(Array)
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(263): CDbCommand->insert('tbl_auth_assign...', Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\ProjectUserForm.php(69): CDbAuthManager->assign('owner', '1', 'somerule')
+#3 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php(138): ProjectUserForm->assign()
+#4 [internal function]: ProjectController->actionAdduser('9')
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#16 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#17 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#19 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=9
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/adduser&id=9
+---
+2013/04/23 08:40:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('9')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=9
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/adduser&id=9
+---
+2013/04/23 08:40:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('9')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=9
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/adduser&id=9
+---
+2013/04/23 08:41:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('9')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=9
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/adduser&id=9
+---
+2013/04/23 08:42:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('3')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=3
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=3
+---
+2013/04/23 08:43:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 08:43:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 08:43:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 08:43:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 08:44:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 08:45:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 08:46:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 08:47:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 08:50:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 08:50:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 09:10:04 [error] [exception.CException] exception 'CException' with message 'Property "CDbAuthManager.role" is not defined.' in D:\WebServers\home\easylend.no-ip.org\www\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CAuthManager.php(149): CComponent->__get('role')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(98): CAuthManager->executeBizRule(NULL, Array, NULL)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(75): CDbAuthManager->checkAccessRecursive('createUser', '1', Array, Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CWebUser.php(806): CDbAuthManager->checkAccess('createUser', '1', Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php(127): CWebUser->checkAccess('createUser', Array)
+#5 [internal function]: ProjectController->actionAdduser('4')
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#17 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#18 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#20 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 09:20:54 [error] [exception.CException] exception 'CException' with message 'Property "CDbAuthManager.role" is not defined.' in D:\WebServers\home\easylend.no-ip.org\www\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CAuthManager.php(149): CComponent->__get('role')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(98): CAuthManager->executeBizRule(NULL, Array, NULL)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(75): CDbAuthManager->checkAccessRecursive('createUser', '1', Array, Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CWebUser.php(806): CDbAuthManager->checkAccess('createUser', '1', Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php(127): CWebUser->checkAccess('createUser', Array)
+#5 [internal function]: ProjectController->actionAdduser('4')
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#17 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#18 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#20 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 09:21:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 09:21:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 09:21:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 09:21:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 09:21:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 09:25:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 09:25:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 09:25:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 09:25:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 09:26:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('4')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=4
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=4
+---
+2013/04/23 09:28:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('8')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=8
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=8
+---
+2013/04/23 09:28:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:128
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('3')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=3
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/view&id=3
+---
+2013/04/23 09:56:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php (59)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php (32)
+2013/04/23 09:56:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_auth_assignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php:359
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php(1249): CDbCommand->execute(Array)
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(263): CDbCommand->insert('tbl_auth_assign...', Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php(59): CDbAuthManager->assign('owner', '1', 'return isset($p...')
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(49): ProjectController->actionCreate()
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/create')
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#16 {main}
+REQUEST_URI=/trackstar/index.php?r=project/create
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/create
+---
+2013/04/23 10:00:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/admin')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php?r=project/admin
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php?r=project/index
+---
+2013/04/23 10:11:34 [error] [php] Array to string conversion (D:\WebServers\home\easylend.no-ip.org\www\framework\db\CDbCommand.php:510)
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(337): CDbCommand->queryAll()
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\views\project\view.php(19): CDbAuthManager->checkAccess()
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CBaseController.php(126): require()
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CBaseController.php(95): ProjectController->renderInternal()
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(869): ProjectController->renderFile()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(782): ProjectController->renderPartial()
+#7 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php(38): ProjectController->render()
+#8 unknown(0): ProjectController->actionView()
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#16 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#18 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#19 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): ProjectController->run()
+#20 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#22 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CWebApplication->run()
+REQUEST_URI=/trackstar/index.php?r=project/view&id=2
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\views\project\view.php (19)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php (38)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php (32)
+2013/04/23 10:16:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:130
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('11')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=11
+---
+2013/04/23 10:16:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'access restricted' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php:130
+Stack trace:
+#0 [internal function]: ProjectController->actionAdduser('10')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('adduser')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/adduser')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#15 {main}
+REQUEST_URI=/trackstar/index.php?r=project/adduser&id=10
+---
+2013/04/23 15:17:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php:336
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('view')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/view')
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/view
+---
+2013/04/23 15:17:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\IssueController.php:192
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue
+---
+2013/04/23 15:18:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\IssueController.php:192
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue&id=3
+---
+2013/04/23 15:18:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\IssueController.php:192
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('issue')
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(32): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue&project_id=3
+---
+2013/05/04 08:31:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php:336
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('view')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/view/1')
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php/project/view/1
+---
+2013/05/04 08:31:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php:336
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('view')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/view/2')
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php/project/view/2
+---
+2013/05/04 08:41:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\IssueController.php:200
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php/issues
+---
+2013/05/04 08:49:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/admin')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/index.php/issue/admin
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php/issue/create/pid/1
+---
+2013/05/04 10:19:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php:336
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('view')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/view')
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/issue/view
+---
+2013/05/04 10:20:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\IssueController.php:200
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/issues
+---
+2013/05/04 10:34:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/admin/pid...')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/issue/admin/pid/1
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/issue/2
+---
+2013/05/04 11:19:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/background.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/background.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/admin
+---
+2013/05/04 11:19:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/bg2.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/bg2.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/admin
+---
+2013/05/04 11:19:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/background.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/background.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/admin
+---
+2013/05/04 11:19:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/bg2.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/bg2.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/admin
+---
+2013/05/04 11:20:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/bg2.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/bg2.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/admin
+---
+2013/05/04 11:20:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/background.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/background.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/admin
+---
+2013/05/04 11:54:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\modules\admin\AdminModule.php:27
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(263): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/admin
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/project
+---
+2013/05/04 11:55:00 [error] [php] Trying to get property of non-object (D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\components\UserIdentity.php:20)
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CModel.php(159): CInlineValidator->validate()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\SiteController.php(103): LoginForm->validate()
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CWebApplication->run()
+REQUEST_URI=/trackstar/site/login
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\components\UserIdentity.php (20)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\LoginForm.php (52)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\SiteController.php (103)
+2013/05/04 11:58:16 [error] [php] Trying to get property of non-object (D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\components\UserIdentity.php:21)
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CModel.php(159): CInlineValidator->validate()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\SiteController.php(103): LoginForm->validate()
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CWebApplication->run()
+REQUEST_URI=/trackstar/site/login
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\components\UserIdentity.php (21)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\models\LoginForm.php (52)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\SiteController.php (103)
+2013/05/04 13:03:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\modules\admin\AdminModule.php:27
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(263): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#5 {main}
+REQUEST_URI=/trackstar/admin
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/site/index
+---
+2013/05/04 13:19:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/background.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/background.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/site/index
+---
+2013/05/04 13:19:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/bg2.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/bg2.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/site/index
+---
+2013/05/04 13:19:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/index".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/index')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/gii/index
+---
+2013/05/04 13:24:10 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.admin.models.SysMessage" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\WebServers\home\easylend.no-ip.org\www\framework\YiiBase.php:318
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\validators\CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('')
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#14 {main}
+REQUEST_URI=/trackstar/gii/crud
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/gii/crud
+---
+2013/05/04 13:28:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/bg2.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/bg2.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php/projects.html
+---
+2013/05/04 13:28:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/background.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/background.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php/projects.html
+---
+2013/05/04 15:37:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asdfqw".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('asdfqw')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/asdfqw
+---
+2013/05/04 15:37:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/bg2.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/bg2.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/asdfqw
+---
+2013/05/04 15:37:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/background.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/background.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/asdfqw
+---
+2013/05/04 15:37:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asdfqw".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('asdfqw')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/asdfqw
+---
+2013/05/05 14:37:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/bg2.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/bg2.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/site/index
+---
+2013/05/05 14:37:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/background.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/background.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/site/index
+---
+2013/05/05 14:39:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/bg2.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/bg2.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/projects.html
+---
+2013/05/05 15:04:56 [error] [php] Object of class SysMessage could not be converted to string (D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\views\project\index.php:18)
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(869): ProjectController->renderFile()
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(782): ProjectController->renderPartial()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php(130): ProjectController->render()
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(49): ProjectController->actionIndex()
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): ProjectController->runAction()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): ProjectController->filterAccessControl()
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): ProjectController->runActionWithFilters()
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): ProjectController->run()
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CWebApplication->run()
+REQUEST_URI=/trackstar/projects.html
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\views\project\index.php (18)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\ProjectController.php (130)
+in D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php (31)
+2013/05/05 16:00:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\IssueController.php:156
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\IssueController.php(34): IssueController->loadModel('1', true)
+#1 [internal function]: IssueController->actionView('1')
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(IssueController), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(IssueController), Object(ReflectionMethod), Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('view')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/view')
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#16 {main}
+REQUEST_URI=/trackstar/issue/1
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/projects.html
+---
+2013/05/05 16:00:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/admin')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/project/admin
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/projects.html
+---
+2013/05/05 16:00:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\IssueController.php:200
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/issue/index
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/issue/2
+---
+2013/05/05 16:02:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\IssueController.php:156
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\trackstar\protected\controllers\IssueController.php(34): IssueController->loadModel('1', true)
+#1 [internal function]: IssueController->actionView('1')
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(IssueController), Array)
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(IssueController), Object(ReflectionMethod), Array)
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('view')
+#13 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('issue/view/id/1')
+#14 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#16 {main}
+REQUEST_URI=/trackstar/issue/view/id/1
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/projects.html
+---
+2013/05/05 16:02:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\WebServers\home\easylend.no-ip.org\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('project/admin')
+#9 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(31): CApplication->run()
+#11 {main}
+REQUEST_URI=/trackstar/project/admin
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/projects.html
+---
+2013/05/05 19:58:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/background.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(38): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/background.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php
+---
+2013/05/05 19:58:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/newtheme/css/images/bg2.gif".' in D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\WebServers\home\easylend.no-ip.org\www\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/newtheme...')
+#1 D:\WebServers\home\easylend.no-ip.org\www\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\WebServers\home\easylend.no-ip.org\www\trackstar\index.php(38): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/themes/newtheme/css/images/bg2.gif
+HTTP_REFERER=http://easylend.no-ip.org/trackstar/index.php
+---
